@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 16px 0;
+}
+
+.balance b {
+  font-size: 28px;
+}
+
+.forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+form {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.minus {
+  color: #c62828;
+}
+
+.plus {
+  color: #2e7d32;
+}
+
+.login-box {
+  max-width: 320px;
+  margin: 100px auto;
+}
+
+.switch {
+  color: #1f6feb;
+  cursor: pointer;
+}
+
+.error {
+  color: #c62828;
+}
+
+.message {
+  color: #1f6feb;
+}
+
+.empty {
+  color: #777;
+}
+
+@media (max-width: 700px) {
+  .forms {
+    grid-template-columns: 1fr;
+  }
+}
